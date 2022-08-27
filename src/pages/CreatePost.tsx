@@ -16,6 +16,7 @@ function CreatePost({ isAuth }: any) {
     }, [])
 
     const postCollectionRef = collection(db,"posts")
+    
     const createPost = async () => {
         await addDoc(postCollectionRef,{
             title : title,

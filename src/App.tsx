@@ -29,7 +29,7 @@ function App() {
         {!isLogged ? <Link to="/login">Login With Firebase</Link> : <button onClick={handleLogout}>Logout</button>}
       </nav>
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Home isAuth = {isLogged}/>} />
         <Route path="/login" element={<Login setLogin={setLogin} />} />
         <Route path="/create-post" element={<CreatePost isAuth = {isLogged}/>} />
       </Routes>
