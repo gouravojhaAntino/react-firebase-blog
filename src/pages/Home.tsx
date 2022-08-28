@@ -39,6 +39,9 @@ function Home({isAuth}:any) {
                                 Post : {data.post}
                             </div>
                             <div>
+                                <img src={data.media.url} alt="media" width="700" height="300"/> 
+                            </div>
+                            <div>
                                 Author : {data.author.name}
                             </div>
                             <div>
